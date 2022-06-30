@@ -4,9 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/36b2d1c693.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Omega</title>
   </head>
   <body>
+    <div class="blue-stripe">
+      <div class="wrapper">
+        <i class="fa-solid fa-location-dot"></i>
+        <p class="address nav-info">ul. Olszynowa 11 39-200 Dębica</p>
+      </div>
+      <div class="wrapper">
+        <i class="fa-solid fa-phone"></i>
+        <p class="number nav-info">502 342 031</p>
+      </div>
+      <div class="wrapper">
+        <i class="fa-solid fa-envelope"></i>
+        <p class="e-mail nav-info">bok@klimatyzatory-omega.pl</p>
+      </div>
+    </div>
     <nav class="nav-bar">
       <a href="/Omega-site-html-template/index" class="link">
         <img
@@ -17,29 +37,72 @@
       </a>
       <a href="/Omega-site-html-template/o-firmie" class="link">O firmie</a>
       <a href="/Omega-site-html-template/klimatyzator-me" class="link"
-        >klimatyzator me</a
+        >Klimatyzator me</a
       >
       <a href="/Omega-site-html-template/klimatyzatory-lg" class="link"
-        >klimatyzatory lg</a
+        >Klimatyzatory lg</a
       >
       <a href="/Omega-site-html-template/klimatyzator-gree" class="link"
-        >klimatyzator gree</a
+        >Klimatyzator gree</a
       >
       <a href="/Omega-site-html-template/dobór-klimy" class="link"
-        >dobór klimy/pompy ciepła</a
+        >Dobór klimy/pompy ciepła</a
       >
       <a href="/Omega-site-html-template/pliki-do-pobrania" class="link"
-        >pliki do pobrania</a
+        >Pliki do pobrania</a
       >
-      <a href="/Omega-site-html-template/kontakt" class="link">kontakt</a>
+      <a href="/Omega-site-html-template/kontakt" class="link">Kontakt</a>
+      <!-- <a href="/index.html" class="link">
+        <img
+          src="assets/omega-logo-screenshot.png"
+          alt="logo omega"
+          class="logo"
+        />
+      </a>
+      <a href="/o-firmie.html" class="link">O firmie</a>
+      <a href="/klimatyzator-me.html" class="link">Klimatyzator me</a>
+      <a href="/klimatyzatory-lg.html" class="link">Klimatyzatory lg</a>
+      <a href="/kimatyzator-gree.html" class="link">Klimatyzator gree</a>
+      <a href="/dobór-klimy.html" class="link">Dobór klimy/pompy ciepła</a>
+      <a hreD="/pliki-do-pobrania.html" class="link">Pliki do pobrania</a>
+      <a href="/kontakt.html" class="link">Kontakt</a> -->
     </nav>
 
     <!-- Slider section - js -->
-    <section class="slider-section">
-      <div class="slider"></div>
+    <section class="slider-section" aria-label="Slider with photos">
+      <div class="carousel-container">
+        <i class="fa-solid fa-arrow-left" id="prevBtn"></i>
+        <i class="fa-solid fa-arrow-right" id="nextBtn"></i>
+        <div class="carousel-slide">
+          <img
+          src="assets/Painting_Art_Back_view_Photographer_575380_2560x1440.jpg""
+          id="last-image" alt="" />
+
+          <img src="assets/270019-aliya06_2560x1440.jpg" alt="" />
+
+          <img src="assets/Abstraction_596397_2560x1440.jpg" alt="" />
+          <img
+            src="assets/Illustrations_to_books_Men_Monsters_War_of_the_520180_2560x1440.jpg"
+            alt=""
+          />
+          <img
+            src="assets/Painting_Art_Back_view_Photographer_575380_2560x1440.jpg"
+            alt=""
+          />
+
+          <img
+            src="assets/270019-aliya06_2560x1440.jpg"
+            id="first-image"
+            alt=""
+          />
+        </div>
+      </div>
       <h1 class="header">
         Dostawa, montaż i serwis klimatyzatorów i pomp ciepła
       </h1>
+
+      <button class="prevBtn">Prev</button>
+      <button class="nextBtn">Next</button>
     </section>
     <!-- Main section -->
     <main class="main-section">
