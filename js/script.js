@@ -33,9 +33,12 @@
 
 const carouselSlide = document.querySelector('.carousel-slide')
 const carouselImages = document.querySelectorAll('.carousel-slide img')
+const test = Array.from(document.querySelectorAll('.main-test'))
+console.log(test)
 
 const nextBtn = document.querySelector('#nextBtn')
 const prevBtn = document.querySelector('#prevBtn')
+
 
 let counter = 1
 const size = carouselImages[0].clientWidth
@@ -43,12 +46,22 @@ const size = carouselImages[0].clientWidth
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 
-
 nextBtn.addEventListener("click", () => {
     if(counter >= carouselImages.length - 1) return
     carouselSlide.style.transition = "transform 1s ease-in-out"
     counter++
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+ 
+    if(counter - 2 === 2) {
+        test[counter - 2].classList.remove('active')
+        test[counter - 4].classList.add('active')
+    } else {
+        test[counter - 2].classList.remove('active')
+        test[counter - 1].classList.add('active')
+    }
+
+    
+
 })
 
 prevBtn.addEventListener("click", () => {
@@ -56,6 +69,14 @@ prevBtn.addEventListener("click", () => {
     carouselSlide.style.transition = "transform 1s ease-in-out"
     counter--
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+    if(counter === 0) {
+        test[counter].classList.remove('active')
+        test[counter + 2].classList.add('active')
+    } else {
+        test[counter].classList.remove('active')
+        test[counter - 1].classList.add('active')
+    }
 })
 
 function incrementCounter() {
@@ -65,7 +86,7 @@ function incrementCounter() {
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
 
-setInterval(incrementCounter, 4000)
+// setInterval(incrementCounter, 5000)
 
 carouselSlide.addEventListener("transitionend", () => {
     if(carouselImages[counter].id === 'last-image') {
@@ -85,6 +106,7 @@ window.addEventListener('resize', () => {
     size = carouselImages[0].clientWidth;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
+
 
 
 

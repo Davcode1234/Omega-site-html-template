@@ -10,11 +10,13 @@ html {
   }
 
   body {
-    font-family: 'system-ui', sans-serif;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
+    background-color: rgb(249, 249, 249)
   }
-
+  
   .blue-stripe {
     display: flex;
     align-items: center;
@@ -25,45 +27,74 @@ html {
   .blue-stripe:first-child {
     padding-left: clamp(5rem, 5vw, 15rem);
   }
-
+  
   .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-   .wrapper > p {
+  
+  .wrapper > p {
     color: white;
-    font-size: clamp(1rem, 1vw,1.5rem);
-
+    font-size: clamp(1rem, 1vw,1.3rem);
     font-weight: 600;
     margin-right: 5rem;
   }
-
-
+  
+  
   .fa-solid {
-   font-size: clamp(1rem, 1vw,1.5rem);
-
+    font-size: clamp(1rem, 1vw,1.5rem);
     color: white;
     margin-right: 1rem;
   }
-
+  
+  .nav-bar {
+    position: relative;
+      width: 100%;
+      height: 10rem;
+      padding-left: clamp(5rem, 5vw, 10rem);
+      display: flex;
+      justify-content: flex-start;
+      gap: clamp(5rem, 10vw, 15rem);
+      align-items: center;
+  }
   .logo {
-    width: clamp(15rem, 15vw, 25rem);
-    margin: 1rem 2rem;
+    width: clamp(13rem, 13vw, 23rem);
   }
 
-.link {
+  .text-links {
+    display: flex;
+    gap: 5rem;
+  }
+
+.link, .contact-link {
     text-decoration: none;
-    font-size: clamp(1rem, 1vw,2rem);
-    color: #030925;
-    transition: color 0.2s ease-in;
+    font-size: clamp(1rem, 1vw,1.5rem);
+    font-weight: 600;
+    color: #001D23;
+    transition: all 0.2s ease-in;
 }
 
 .link:hover {
     color: #009fe4;
 }
 
+.contact-link {
+  display: block;
+  background-color:#009fe4 ;
+  padding: 1.5rem 3.5rem;
+  border-radius: 3rem;
+  transition: all 0.3s ease;
+  position: absolute;
+  right: 5%;
+  top: 25%;
+}
+
+.contact-link:hover {
+  background-color: #001D23;
+  color: #fff;
+  transform: scale(1.1);
+}
 
 .carousel-container {
     width: 100%;
@@ -75,30 +106,28 @@ html {
 .carousel-slide {
     display: flex;
     width: 100%;
-    height: 70vh;
+    height:90vh;
 }
 
 .carousel-slide > img {
     min-width: 100%;
 }
 
-.nav-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
 #prevBtn {
     position: absolute;
     top: 50%;
     z-index: 3;
     left: 3%;
-    font-size: 5rem;
-    color: white;
-    opacity: 0.7;
+    font-size: 4rem;
+    color: #001D23;
+    opacity: 0;
     cursor: pointer;
-    transition: all 0.5s ease
+    transition: all 0.5s ease;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    transform: translateX(-50px);
 }
 
 #nextBtn {
@@ -106,24 +135,59 @@ html {
     top: 50%;
     z-index: 3;
     right: 3%;
-    font-size: 5rem;
-    color: white;
-    opacity: 0.7;
+    font-size: 4rem;
+    color: #001D23;
+    opacity: 0;
     cursor: pointer;
-    transition: all 0.5s ease
-}
-
-#prevBtn:hover, #nextBtn:hover { 
-    opacity: 1;
-    transform: translateX(3px);
-}
-
-#prevBtn:hover {
-    transform: translateX(-3px);
+    transition: all 0.5s ease;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    transform: translateX(50px);
 
 }
 
-#nextBtn:hover {
-    transform: translateX(3px);
+.carousel-container:hover #prevBtn{
+  opacity: 0.7;
+  transform: translateX(0);
+}
 
+.carousel-container:hover #nextBtn{
+  opacity: 0.7;
+  transform: translateX(0);
+}
+
+.carousel-headers-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* .test {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: 400;
+  z-index: 3;
+  color: #fff;
+  top: 40%;
+} */
+
+.main-test {
+  background-color: rgba(0,0,0,.4);
+  border-radius: 3rem;
+  padding: clamp(5rem,2vw,6rem);
+  z-index: 3;
+  position: absolute;
+  top: 40%;
+  font-size: clamp(3rem, 2vw, 5rem);
+  color: #fff;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 1s .3s ease;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0);
 }
