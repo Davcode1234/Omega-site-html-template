@@ -51,6 +51,7 @@ body {
   font-size: clamp(1rem, 1vw, 1.5rem);
   color: white;
   margin-right: 1rem;
+  z-index: 5;
 }
 
 .nav-bar {
@@ -120,23 +121,7 @@ body {
   min-width: 100%;
 }
 
-#prevBtn {
-  position: absolute;
-  top: 50%;
-  z-index: 3;
-  left: 3%;
-  font-size: 4rem;
-  color: var(--secondary-color);
-  opacity: 0;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  background-color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  transform: translateX(-50px);
-}
-
-#nextBtn {
+.fa-arrow-right {
   position: absolute;
   top: 47.5%;
   z-index: 3;
@@ -152,12 +137,53 @@ body {
   transform: translateX(50px);
 }
 
-.carousel-container:hover #prevBtn {
+.fa-arrow-left {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  left: 3%;
+  font-size: 4rem;
+  color: var(--secondary-color);
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  transform: translateX(-50px);
+}
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  left: 3%;
+  opacity: 1;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+#nextBtn {
+  position: absolute;
+  top: 47.5%;
+  z-index: 3;
+  right: 3%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background-color: transparent;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.carousel-container:hover .fa-arrow-right {
   opacity: 0.7;
   transform: translateX(0);
 }
 
-.carousel-container:hover #nextBtn {
+.carousel-container:hover .fa-arrow-left {
   opacity: 0.7;
   transform: translateX(0);
 }
@@ -252,10 +278,6 @@ body {
   transition: transform 0.8s, opacity 0.8s, background-color 0.4s,
     border-color 0.4s ease-in-out;
 }
-
-/* .about-link:hover, .info-link:hover {
-  transform: scale(1.1);
-} */
 
 .about-link:hover {
   background-color: var(--secondary-color);
