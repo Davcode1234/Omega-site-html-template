@@ -1,6 +1,8 @@
 :root {
   --primary-color: #009fe4;
   --secondary-color: #001d23;
+  --color-white: #fff;
+  --border-radius: 3rem;
 }
 
 html {
@@ -41,7 +43,7 @@ body {
 }
 
 .wrapper > p {
-  color: white;
+  color: var(--color-white);
   font-size: clamp(1rem, 1vw, 1.3rem);
   font-weight: 600;
   margin-right: 5rem;
@@ -49,7 +51,14 @@ body {
 
 .fa-solid {
   font-size: clamp(1rem, 1vw, 1.5rem);
-  color: white;
+  color: var(--color-white);
+  margin-right: 1rem;
+  z-index: 5;
+}
+
+.fa-brands {
+  font-size: clamp(1rem, 1vw, 1.5rem);
+  color: var(--color-white);
   margin-right: 1rem;
   z-index: 5;
 }
@@ -89,7 +98,7 @@ body {
 .contact-link {
   display: block;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--color-white);
   padding: 1.5rem 3.5rem;
   border-radius: 3rem;
   transition: all 0.3s ease;
@@ -100,7 +109,7 @@ body {
 
 .contact-link:hover {
   background-color: var(--secondary-color);
-  color: #fff;
+  color: var(--color-white);
   transform: scale(1.1);
 }
 
@@ -131,7 +140,7 @@ body {
   opacity: 0;
   cursor: pointer;
   transition: all 0.5s ease;
-  background-color: #fff;
+  background-color: var(--color-white);
   padding: 1rem 2rem;
   border-radius: 1rem;
   transform: translateX(50px);
@@ -147,7 +156,7 @@ body {
   opacity: 0;
   cursor: pointer;
   transition: all 0.5s ease;
-  background-color: #fff;
+  background-color: var(--color-white);
   padding: 1rem 2rem;
   border-radius: 1rem;
   transform: translateX(-50px);
@@ -202,10 +211,11 @@ body {
   position: absolute;
   top: 40%;
   font-size: clamp(3rem, 2vw, 5rem);
-  color: #fff;
+  color: var(--color-white);
   transform: translateY(150%);
   opacity: 0;
   transition: all 1s ease;
+  letter-spacing: 0.3rem;
 }
 
 .active {
@@ -257,7 +267,7 @@ body {
 .about-link,
 .info-link {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-white);
   font-size: 2rem;
   font-weight: 500;
   top: 50%;
@@ -274,7 +284,7 @@ body {
   transition: transform 0.6s, opacity 0.6s, background-color 0.4s ease-in-out;
 }
 .info-link {
-  border: 1px solid #fff;
+  border: 1px solid var(--color-white);
   transition: transform 0.8s, opacity 0.8s, background-color 0.4s,
     border-color 0.4s ease-in-out;
 }
@@ -291,4 +301,74 @@ body {
 .active-link {
   transform: translateY(0);
   opacity: 1;
+}
+
+/* main section */
+
+.header-container {
+  width: 100%;
+  height: clamp(5rem, 5vw, 15rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-bottom: 1px solid rgba(0, 29, 35, 0.7); */
+}
+
+.header {
+  font-size: clamp(2rem, 2vw, 4rem);
+}
+
+.text-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(5rem, 5vw, 15rem);
+  padding: 8rem 0;
+}
+
+.fa-screwdriver-wrench,
+.fa-snowflake,
+.fa-circle-info {
+  font-size: clamp(2rem, 2vw, 4.5rem);
+}
+.about-text {
+  font-size: clamp(1rem, 1vw, 2rem);
+  color: var(--color-white);
+  margin-top: 2rem;
+}
+
+.about-text-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  min-width: 200px;
+  height: clamp(40rem, 40vw, 50rem);
+  border-radius: var(--border-radius);
+  background-color: rgba(0, 159, 228, 0.7);
+  padding: 3rem;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-text-card:hover {
+  transform: translateY(-20px) scale(1.1);
+}
+
+/* footer */
+
+.footer-stripe {
+  width: 100%;
+  height: 4rem;
+  background-color: var(--primary-color);
+  padding: 0.5rem 0;
+}
+
+.footer-paragraph {
+  position: absolute;
+  font-size: 1.6rem;
+  color: var(--color-white);
+  right: 5%;
 }

@@ -9,6 +9,7 @@ const prevBtn = document.querySelector("#prevBtn");
 const sliderLinks = Array.from(document.querySelectorAll(".slider-link"));
 
 let counter = 1;
+let intervalID;
 const size = carouselImages[0].clientWidth;
 
 carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
@@ -21,6 +22,12 @@ const disableButton = () => {
     prevBtn.disabled = false;
   }, 2500);
 };
+
+function resetInterval() {
+  clearInterval(intervalID);
+
+  intervalID = setInterval(autoPlaySlider, 8000);
+}
 
 function addActiveCircle() {
   circles.forEach((x) => {
@@ -47,6 +54,8 @@ function addPrevAvctiveHeader() {
 }
 
 nextBtn.addEventListener("click", () => {
+  resetInterval();
+
   if (counter >= carouselImages.length - 1) return;
   carouselSlide.style.transition = "transform .5s ease-in-out";
   counter++;
@@ -72,6 +81,7 @@ nextBtn.addEventListener("click", () => {
 });
 
 prevBtn.addEventListener("click", () => {
+  resetInterval();
   if (counter <= 0) return;
   carouselSlide.style.transition = "transform 1s ease-in-out";
   counter--;
@@ -122,7 +132,7 @@ function autoPlaySlider() {
   }
 }
 
-setInterval(autoPlaySlider, 8000);
+intervalID = setInterval(autoPlaySlider, 8000);
 
 carouselSlide.addEventListener("transitionstart", () => {
   disableButton();
