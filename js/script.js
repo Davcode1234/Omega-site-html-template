@@ -25,7 +25,6 @@ const disableButton = () => {
 
 function resetInterval() {
   clearInterval(intervalID);
-
   intervalID = setInterval(autoPlaySlider, 8000);
 }
 

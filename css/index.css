@@ -316,6 +316,18 @@ body {
 
 .header {
   font-size: clamp(2rem, 2vw, 4rem);
+  color: var(--color-white);
+  background-color: var(--secondary-color);
+  padding: 4rem 8rem;
+  border-radius: var(--border-radius);
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
+.second-header {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .text-container {
@@ -327,7 +339,7 @@ body {
   padding: 8rem 0;
 }
 
-.fa-screwdriver-wrench,
+.fa-temperature-arrow-down,
 .fa-snowflake,
 .fa-circle-info {
   font-size: clamp(2rem, 2vw, 4.5rem);
@@ -359,6 +371,76 @@ body {
 
 /* footer */
 
+.footer-container {
+  background-image: url("https://themexbd.com/poket/corporate/wp-content/uploads/2021/11/footer-bg-1.jpg");
+  width: 100%;
+  height: 30rem;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(5rem, 5vw, 20rem);
+}
+
+.footer-container > div {
+  color: var(--color-white);
+}
+
+.first-column,
+.second-column,
+.third-column {
+  width: 10%;
+  min-width: 23rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-column,
+.third-column {
+  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-column {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-header {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-info-wrapper {
+  display: flex;
+  /* align-items: center; */
+}
+
+.footer-content-paragraph {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.fa-facebook-f {
+  font-size: 2.6rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  color: var(--primary-color);
+}
+
 .footer-stripe {
   width: 100%;
   height: 4rem;
@@ -366,9 +448,9 @@ body {
   padding: 0.5rem 0;
 }
 
-.footer-paragraph {
+.footer-stripe-paragraph {
   position: absolute;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--color-white);
   right: 5%;
 }
