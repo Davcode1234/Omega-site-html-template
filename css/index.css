@@ -1,116 +1,8 @@
-:root {
-  --primary-color: #009fe4;
-  --secondary-color: #001d23;
-  --color-white: #fff;
-  --border-radius: 3rem;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Open sans", sans-serif;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(249, 249, 249);
-}
-
-.blue-stripe {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background-color: var(--primary-color);
-  height: 4rem;
-}
-.blue-stripe:first-child {
-  padding-left: clamp(5rem, 5vw, 15rem);
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.wrapper > p {
-  color: var(--color-white);
-  font-size: clamp(1rem, 1vw, 1.3rem);
-  font-weight: 600;
-  margin-right: 5rem;
-}
-
-.blue-stripe > div > i,
-.blue-stripe > div > a > i,
 .fa-solid {
   font-size: clamp(1rem, 1vw, 1.5rem);
   color: var(--color-white);
   margin-right: 1rem;
   z-index: 5;
-}
-
-.nav-bar {
-  position: relative;
-  width: 100%;
-  height: 10rem;
-  padding-left: clamp(5rem, 5vw, 10rem);
-  display: flex;
-  justify-content: flex-start;
-  gap: clamp(5rem, 5vw, 15rem);
-  align-items: center;
-}
-.logo {
-  width: clamp(13rem, 13vw, 23rem);
-}
-
-.text-links {
-  display: flex;
-  gap: clamp(2rem, 2vw, 5rem);
-}
-
-.link,
-.contact-link {
-  text-decoration: none;
-  font-size: clamp(1rem, 1vw, 1.5rem);
-  font-weight: 600;
-  color: var(--secondary-color);
-  transition: all 0.2s ease-in;
-}
-
-.link:hover {
-  color: var(--primary-color);
-}
-
-.contact-link {
-  display: block;
-  background-color: var(--primary-color);
-  color: var(--color-white);
-  padding: 1.5rem 3.5rem;
-  padding-top: clamp(0.5rem, 2.5vw, 1.5rem);
-  padding-bottom: clamp(0.5rem, 2.5vw, 1.5rem);
-  padding-left: clamp(2rem, 2.5vw, 3.5rem);
-  padding-right: clamp(2rem, 2.5vw, 3.5rem);
-
-  border-radius: 3rem;
-  transition: all 0.3s ease;
-  position: absolute;
-  right: 5%;
-  top: 25%;
-}
-
-.contact-link:hover {
-  background-color: var(--secondary-color);
-  color: var(--color-white);
-  transform: scale(1.1);
 }
 
 .carousel-container {
@@ -323,7 +215,7 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
-  gap: clamp(5rem, 5vw, 15rem);
+  gap: clamp(2rem, 2vw, 15rem);
   padding: 8rem 0;
 }
 
@@ -358,88 +250,12 @@ body {
   transform: translateY(-20px) scale(1.1);
 }
 
+@media (max-width: 850px) {
+  .text-container {
+    flex-wrap: wrap;
+  }
+}
+
 /* footer */
 
-.footer-container {
-  background-image: url("https://themexbd.com/poket/corporate/wp-content/uploads/2021/11/footer-bg-1.jpg");
-  width: 100%;
-  height: 30rem;
-  background-color: var(--secondary-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: clamp(5rem, 5vw, 20rem);
-}
-
-.footer-container > div {
-  color: var(--color-white);
-}
-
-.first-column,
-.second-column,
-.third-column {
-  width: 10%;
-  min-width: 23rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.first-column,
-.third-column {
-  align-items: flex-start;
-  align-items: center;
-  justify-content: center;
-}
-
-.second-column {
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.footer-header {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  text-align: center;
-}
-
-.footer-info-wrapper {
-  display: flex;
-}
-
-.footer-content-paragraph {
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
-}
-
-.fa-facebook-f {
-  font-size: 2.6rem;
-  color: var(--color-white);
-}
-
-.footer-link {
-  text-decoration: none;
-  color: var(--color-white);
-  font-size: 1.4rem;
-  margin-top: 1rem;
-  transition: all 0.3s ease-in-out;
-}
-
-.footer-link:hover {
-  color: var(--primary-color);
-}
-
-.footer-stripe {
-  width: 100%;
-  height: 4rem;
-  background-color: var(--primary-color);
-  padding: 0.5rem 0;
-}
-
-.footer-stripe-paragraph {
-  position: absolute;
-  font-size: 1.4rem;
-  color: var(--color-white);
-  right: 5%;
-}
+/* mobile nav bar */

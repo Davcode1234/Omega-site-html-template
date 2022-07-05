@@ -1,0 +1,92 @@
+.footer-container {
+  background-image: url("https://themexbd.com/poket/corporate/wp-content/uploads/2021/11/footer-bg-1.jpg");
+  width: 100%;
+  height: 30rem;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(5rem, 5vw, 20rem);
+}
+
+.footer-container > div {
+  color: var(--color-white);
+}
+
+.first-column,
+.second-column,
+.third-column {
+  width: 10%;
+  min-width: 23rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-column,
+.third-column {
+  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-column {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-header {
+  font-size: clamp(1.5rem, 1.5vw, 2.2rem);
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-info-wrapper {
+  display: flex;
+}
+
+.footer-content-paragraph {
+  font-size: clamp(1rem, 1vw, 1.4rem);
+  margin-bottom: 2rem;
+}
+
+.fa-facebook-f {
+  font-size: clamp(1.6rem, 1.6vw, 2.6rem);
+  color: var(--color-white);
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: clamp(1rem, 1vw, 1.4rem);
+  margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  color: var(--primary-color);
+}
+
+.footer-stripe {
+  width: 100%;
+  height: 4rem;
+  background-color: var(--primary-color);
+  padding: 0.5rem 0;
+}
+
+.footer-stripe-paragraph {
+  position: absolute;
+  font-size: clamp(1rem, 1vw, 1.4rem);
+  color: var(--color-white);
+  right: 5%;
+}
+
+@media (max-width: 800px) {
+  .first-column,
+  .second-column,
+  .third-column {
+    min-width: 10rem;
+    text-align: center;
+  }
+}

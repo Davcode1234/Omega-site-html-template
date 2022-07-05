@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +24,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <script src="./js/script.js" defer></script>
+    <script src="./js/carousel.js" defer></script>
+    <script src="./js/mobileNavBar.js" defer></script>
     <script
       src="https://kit.fontawesome.com/36b2d1c693.js"
       crossorigin="anonymous"
@@ -32,7 +34,7 @@
   </head>
   <body>
     <div class="blue-stripe">
-      <div class="wrapper">
+      <div class="wrapper first-wrapper">
         <i class="fa-solid fa-location-dot"></i>
         <p class="address nav-info">ul. Olszynowa 11 39-200 Dębica</p>
       </div>
@@ -46,7 +48,7 @@
         </a>
         <p class="e-mail nav-info">bok@klimatyzatory-omega.pl</p>
       </div>
-      <div class="wrapper">
+      <div class="wrapper last-wrapper">
         <a
           href="https://www.facebook.com/omegaklimatyzatory/?ref=hl"
           target="_blank"
@@ -57,7 +59,52 @@
         <p class="nav-info">Odwiedź nas na Facebooku!</p>
       </div>
     </div>
-    <nav class="nav-bar">
+    <div class="mobile-nav-bar">
+      <div class="mobile-nav-bar-container">
+        <a href="/Omega-site-html-template/index" class="link">
+          <img src="assets/logo.jpg" alt="logo omega" class="mobile-logo" />
+        </a>
+        <button class="mobile-btn"></button>
+      </div>
+
+      <div class="slider-menu">
+        <a href="/Omega-site-html-template/index" class="mobile-nav-bar-link">
+          Home
+        </a>
+
+        <a href="o-firmie.html" class="mobile-nav-bar-link">O firmie</a>
+        <a
+          href="/Omega-site-html-template/klimatyzator-me"
+          class="mobile-nav-bar-link"
+          >Klimatyzator ME</a
+        >
+        <a
+          href="/Omega-site-html-template/klimatyzatory-lg"
+          class="mobile-nav-bar-link"
+          >Klimatyzatory LG</a
+        >
+        <a
+          href="/Omega-site-html-template/klimatyzator-gree"
+          class="mobile-nav-bar-link"
+          >Klimatyzator GREE</a
+        >
+        <a
+          href="/Omega-site-html-template/dobór-klimy"
+          class="mobile-nav-bar-link"
+          >Dobór klimy/Pompy ciepła</a
+        >
+        <a
+          href="/Omega-site-html-template/pliki-do-pobrania"
+          class="mobile-nav-bar-link"
+          >Pliki do pobrania</a
+        >
+        <a href="/Omega-site-html-template/kontakt" class="mobile-nav-bar-link"
+          >Kontakt</a
+        >
+      </div>
+    </div>
+
+    <nav class="desktop-nav-bar">
       <a href="/Omega-site-html-template/index" class="link">
         <img src="assets/logo.jpg" alt="logo omega" class="logo" />
       </a>
@@ -189,9 +236,9 @@
             </p>
           </div>
         </div>
-        <p class="about-text">
+        <!-- <p class="about-text">
           W przypadku dodatkowych pytań jesteśmy do Państwa dyspozycji.
-        </p>
+        </p> -->
       </section>
 
       <!-- News section - nie wiem czy to będzie jakoś przez js generowane czy przez jakiś cms, więc nie dodaję nic na sztywno -->

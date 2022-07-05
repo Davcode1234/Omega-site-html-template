@@ -1,0 +1,37 @@
+@import url(./index.css);
+@import url(./o-firmie.css);
+@import url(./klimatyzatory-me.css);
+@import url(./klimatyzatory-lg.css);
+@import url(./klimatyzatory-gree.css);
+@import url(./dobór-klimy.css);
+@import url(./pliki-do-pobrania.css);
+@import url(./kontakt.css);
+@import url(./footer.css);
+@import url(./nav-bar.css);
+
+:root {
+  --primary-color: #009fe4;
+  --secondary-color: #001d23;
+  --color-white: #fff;
+  --border-radius: 3rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(249, 249, 249);
+}

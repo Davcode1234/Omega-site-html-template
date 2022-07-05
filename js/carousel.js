@@ -131,7 +131,7 @@ function autoPlaySlider() {
   }
 }
 
-intervalID = setInterval(autoPlaySlider, 8000);
+// intervalID = setInterval(autoPlaySlider, 8000);
 
 carouselSlide.addEventListener("transitionstart", () => {
   disableButton();
@@ -147,10 +147,4 @@ carouselSlide.addEventListener("transitionend", () => {
     counter = carouselImages.length - counter;
     carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
   }
-});
-
-window.addEventListener("resize", () => {
-  carouselSlide.style.transition = "none";
-  size = carouselImages[0].clientWidth;
-  carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 });
