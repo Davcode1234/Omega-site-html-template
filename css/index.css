@@ -49,14 +49,9 @@ body {
   margin-right: 5rem;
 }
 
+.blue-stripe > div > i,
+.blue-stripe > div > a > i,
 .fa-solid {
-  font-size: clamp(1rem, 1vw, 1.5rem);
-  color: var(--color-white);
-  margin-right: 1rem;
-  z-index: 5;
-}
-
-.fa-brands {
   font-size: clamp(1rem, 1vw, 1.5rem);
   color: var(--color-white);
   margin-right: 1rem;
@@ -70,7 +65,7 @@ body {
   padding-left: clamp(5rem, 5vw, 10rem);
   display: flex;
   justify-content: flex-start;
-  gap: clamp(5rem, 10vw, 15rem);
+  gap: clamp(5rem, 5vw, 15rem);
   align-items: center;
 }
 .logo {
@@ -79,7 +74,7 @@ body {
 
 .text-links {
   display: flex;
-  gap: 5rem;
+  gap: clamp(2rem, 2vw, 5rem);
 }
 
 .link,
@@ -100,6 +95,11 @@ body {
   background-color: var(--primary-color);
   color: var(--color-white);
   padding: 1.5rem 3.5rem;
+  padding-top: clamp(0.5rem, 2.5vw, 1.5rem);
+  padding-bottom: clamp(0.5rem, 2.5vw, 1.5rem);
+  padding-left: clamp(2rem, 2.5vw, 3.5rem);
+  padding-right: clamp(2rem, 2.5vw, 3.5rem);
+
   border-radius: 3rem;
   transition: all 0.3s ease;
   position: absolute;
@@ -130,27 +130,11 @@ body {
   min-width: 100%;
 }
 
-.fa-arrow-right {
-  position: absolute;
-  top: 47.5%;
-  z-index: 3;
-  right: 3%;
-  font-size: 4rem;
-  color: var(--secondary-color);
-  opacity: 0;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  background-color: var(--color-white);
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  transform: translateX(50px);
-}
-
+.fa-arrow-right,
 .fa-arrow-left {
   position: absolute;
   top: 50%;
   z-index: 3;
-  left: 3%;
   font-size: 4rem;
   color: var(--secondary-color);
   opacity: 0;
@@ -159,13 +143,22 @@ body {
   background-color: var(--color-white);
   padding: 1rem 2rem;
   border-radius: 1rem;
+}
+
+.fa-arrow-right {
+  transform: translateX(50px);
+  right: 3%;
+}
+
+.fa-arrow-left {
+  left: 3%;
   transform: translateX(-50px);
 }
-#prevBtn {
+#prevBtn,
+#nextBtn {
   position: absolute;
   top: 50%;
   z-index: 3;
-  left: 3%;
   opacity: 1;
   cursor: pointer;
   background-color: transparent;
@@ -174,17 +167,12 @@ body {
   border: none;
 }
 
+#prevBtn {
+  left: 3%;
+}
+
 #nextBtn {
-  position: absolute;
-  top: 47.5%;
-  z-index: 3;
   right: 3%;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  background-color: transparent;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
 }
 
 .carousel-container:hover .fa-arrow-right {
@@ -355,9 +343,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 15%;
-  min-width: 200px;
-  height: clamp(40rem, 40vw, 50rem);
+  width: 20%;
+  min-width: 25rem;
+  max-width: 35rem;
+  height: clamp(30rem, 30vw, 50rem);
   border-radius: var(--border-radius);
   background-color: rgba(0, 159, 228, 0.7);
   padding: 3rem;
@@ -417,7 +406,6 @@ body {
 
 .footer-info-wrapper {
   display: flex;
-  /* align-items: center; */
 }
 
 .footer-content-paragraph {
@@ -427,6 +415,7 @@ body {
 
 .fa-facebook-f {
   font-size: 2.6rem;
+  color: var(--color-white);
 }
 
 .footer-link {

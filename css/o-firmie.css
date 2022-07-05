@@ -1,3 +1,45 @@
 .o-firmie-header {
-    font-size: 5rem;
+  font-size: clamp(2rem, 2vw, 4rem);
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 29, 35, 0.9);
+  color: var(--color-white);
+  padding: 5rem 0;
+}
+
+li::marker {
+  content: "❄";
+  letter-spacing: 0.7rem;
+  color: var(--primary-color);
+}
+
+.content-paragraph,
+.list-item {
+  font-size: 1.6rem;
+}
+
+.content-paragraph {
+  margin-top: 2rem;
+}
+
+.list-item {
+  margin-left: 3rem;
+}
+
+.o-firmie-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 10rem 2rem;
+}
+
+.o-firmie-text-wrapper {
+  max-width: 90rem;
+}
+
+.o-firmie-img {
+  width: 30%;
+  min-width: 60rem;
 }
