@@ -90,3 +90,30 @@
     text-align: center;
   }
 }
+
+@media (max-width: 500px) {
+  .footer-stripe {
+    height: 2rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    height: fit-content;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .first-column,
+  .second-column,
+  .third-column {
+    width: 60%;
+    align-items: center;
+    /* text-align: center; */
+  }
+
+  .footer-content-paragraph {
+    margin-bottom: 1rem;
+  }
+}

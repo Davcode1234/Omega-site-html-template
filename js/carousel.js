@@ -131,7 +131,7 @@ function autoPlaySlider() {
   }
 }
 
-// intervalID = setInterval(autoPlaySlider, 8000);
+intervalID = setInterval(autoPlaySlider, 8000);
 
 carouselSlide.addEventListener("transitionstart", () => {
   disableButton();
@@ -153,25 +153,25 @@ const mobileImages = [
   { img: "assets/mobile/night_city_window_rain_131009_2560x1440.jpg" },
 
   {
-    img: "assets/mobile/103-1030997_night-city-view-from-top.jpg",
+    img: "assets/mobile/nat-4.jpg",
   },
-  { img: "assets/mobile/nat-4.jpg" },
+  { img: "assets/mobile/103-1030997_night-city-view-from-top.jpg" },
   { img: "assets/mobile/night_city_window_rain_131009_2560x1440.jpg" },
   {
-    img: "assets/mobile/103-1030997_night-city-view-from-top.jpg",
+    img: "assets/mobile/nat-4.jpg",
   },
 ];
 
 const desktopImages = [
   { img: "assets/night_city_window_rain_131009_2560x1440.jpg" },
-  { img: "assets/103-1030997_night-city-view-from-top.jpg" },
   { img: "assets/nat-4.jpg" },
+  { img: "assets/103-1030997_night-city-view-from-top.jpg" },
   { img: "assets/night_city_window_rain_131009_2560x1440.jpg" },
   {
-    img: "assets/103-1030997_night-city-view-from-top.jpg",
+    img: "assets/nat-4.jpg",
   },
 ];
-const mobileSlider = window.matchMedia("(max-width: 450px)").matches;
+const mobileSlider = window.matchMedia("(max-width: 500px)").matches;
 
 if (mobileSlider) {
   Array.from(carouselImages).forEach((img, key) => {
