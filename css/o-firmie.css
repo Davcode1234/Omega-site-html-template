@@ -15,7 +15,7 @@ li::marker {
 
 .content-paragraph,
 .list-item {
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, 1vw, 1.6rem);
 }
 
 .content-paragraph {
@@ -42,4 +42,28 @@ li::marker {
 .o-firmie-img {
   width: 30%;
   min-width: 60rem;
+}
+
+@media (max-width: 650px) {
+  .o-firmie-img {
+    width: 100%;
+    min-width: 5rem;
+  }
+
+  .o-firmie-content-container {
+    gap: 3rem;
+    padding: 5rem 0rem;
+  }
+
+  .o-firmie-text-wrapper {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .o-firmie-header {
+    font-size: clamp(2rem, 2vw, 4rem);
+    padding: 3rem 0;
+    margin-top: 8rem;
+  }
 }
