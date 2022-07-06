@@ -149,23 +149,36 @@ carouselSlide.addEventListener("transitionend", () => {
   }
 });
 
-const images = [
-  { img: "../assets/mobile/night_city_window_rain_131009_2560x1440.jpg" },
+const mobileImages = [
+  { img: "/assets/mobile/night_city_window_rain_131009_2560x1440.jpg" },
 
   {
-    img: "../assets/mobile/103-1030997_night-city-view-from-top.jpg",
+    img: "/assets/mobile/103-1030997_night-city-view-from-top.jpg",
   },
-  { img: "../assets/mobile/nat-4.jpg" },
-  { img: "../assets/mobile/night_city_window_rain_131009_2560x1440.jpg" },
+  { img: "/assets/mobile/nat-4.jpg" },
+  { img: "/assets/mobile/night_city_window_rain_131009_2560x1440.jpg" },
   {
-    img: "../assets/mobile/103-1030997_night-city-view-from-top.jpg",
+    img: "/assets/mobile/103-1030997_night-city-view-from-top.jpg",
+  },
+];
+
+const desktopImages = [
+  { img: "/assets/night_city_window_rain_131009_2560x1440.jpg" },
+  { img: "/assets/103-1030997_night-city-view-from-top.jpg" },
+  { img: "/assets/nat-4.jpg" },
+  { img: "/assets/night_city_window_rain_131009_2560x1440.jpg" },
+  {
+    img: "/assets/103-1030997_night-city-view-from-top.jpg",
   },
 ];
 const mobileSlider = window.matchMedia("(max-width: 450px)").matches;
 
 if (mobileSlider) {
+  Array.from(carouselImages).forEach((img, key) => {
+    img.src = mobileImages[key].img;
+  });
+} else {
+  Array.from(carouselImages).forEach((img, key) => {
+    img.src = desktopImages[key].img;
+  });
 }
-
-Array.from(carouselImages).forEach((img, key) => {
-  img.src = images[key].img;
-});
