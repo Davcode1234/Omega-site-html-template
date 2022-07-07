@@ -3,17 +3,8 @@
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  margin: 5rem 0;
+  margin: 10rem 0;
   flex-wrap: wrap;
-}
-
-.klimatyzatory-me-header {
-  font-size: clamp(2rem, 2vw, 4rem);
-  width: 100%;
-  text-align: center;
-  background-color: rgba(0, 29, 35, 0.9);
-  color: var(--color-white);
-  padding: 5rem 0;
 }
 
 .me-link {
@@ -48,7 +39,7 @@
   display: flex;
   flex-wrap: wrap-reverse;
   /* flex-direction: column; */
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   gap: clamp(5rem, 5vw, 20rem);
   margin: 10rem 0;
@@ -57,10 +48,10 @@
 .product-example-header {
   position: relative;
   font-size: clamp(1.6rem, 2vw, 2rem);
-  letter-spacing: 0.1rem;
+  /* letter-spacing: 0.1rem; */
   width: 30%;
   text-align: center;
-  margin: 3rem auto;
+  margin: 1rem auto;
   background-color: rgba(0, 159, 228, 0.9);
   color: var(--color-white);
   border-radius: 2rem;
@@ -71,7 +62,7 @@
   position: absolute;
   content: "";
   width: 116.5%;
-  height: 0.4rem;
+  height: 0.2rem;
   top: 45%;
   left: 0.02%;
   transform: translateX(-100%);
@@ -82,7 +73,7 @@
   position: absolute;
   content: "";
   width: 116.5%;
-  height: 0.4rem;
+  height: 0.2rem;
   top: 45%;
   right: 0.02%;
   transform: translateX(100%);
@@ -112,14 +103,11 @@
 table {
   font-size: 1.6rem;
   border-collapse: collapse;
-  margin: 5rem 0;
-  /* border: 1px solid var(--primary-color); */
-  /* box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2); */
+  margin: 0 1rem;
 }
 
 tr {
   transition: all 0.2s ease-in;
-  /* cursor: pointer; */
 }
 
 tr:hover:not(:first-child) {
@@ -193,13 +181,5 @@ td {
   th,
   td {
     padding: 1rem 0;
-  }
-}
-
-@media (max-width: 850px) {
-  .klimatyzatory-me-header {
-    font-size: clamp(2rem, 2vw, 4rem);
-    padding: 3rem 0;
-    margin-top: 8rem;
   }
 }

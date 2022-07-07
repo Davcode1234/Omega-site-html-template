@@ -35,3 +35,20 @@ body {
   padding: 0;
   background-color: var(--color-white);
 }
+
+.main-header {
+  font-size: clamp(2rem, 2vw, 4rem);
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 29, 35, 0.9);
+  color: var(--color-white);
+  padding: 5rem 0;
+}
+
+@media (max-width: 850px) {
+  .main-header {
+    font-size: clamp(2rem, 2vw, 4rem);
+    padding: 3rem 0;
+    margin-top: 8rem;
+  }
+}

@@ -34,7 +34,7 @@
   </head>
   <body>
     <div class="blue-stripe">
-      <div class="wrapper">
+      <div class="wrapper first-wrapper">
         <i class="fa-solid fa-location-dot"></i>
         <p class="address nav-info">ul. Olszynowa 11 39-200 Dębica</p>
       </div>
@@ -43,11 +43,68 @@
         <p class="number nav-info">502 342 031</p>
       </div>
       <div class="wrapper">
-        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto: bok@klimatyzatory-omega.pl">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
         <p class="e-mail nav-info">bok@klimatyzatory-omega.pl</p>
       </div>
+      <div class="wrapper last-wrapper">
+        <a
+          href="https://www.facebook.com/omegaklimatyzatory/?ref=hl"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <p class="nav-info">Odwiedź nas na Facebooku!</p>
+      </div>
     </div>
-    <nav class="nav-bar">
+    <div class="mobile-nav-bar">
+      <div class="mobile-nav-bar-container">
+        <a href="/Omega-site-html-template/index" class="link">
+          <img src="assets/logo.jpg" alt="logo omega" class="mobile-logo" />
+        </a>
+        <button class="mobile-btn"></button>
+      </div>
+
+      <div class="slider-menu">
+        <a href="/Omega-site-html-template/index" class="mobile-nav-bar-link">
+          Home
+        </a>
+
+        <a href="o-firmie.html" class="mobile-nav-bar-link">O firmie</a>
+        <a
+          href="/Omega-site-html-template/klimatyzator-me"
+          class="mobile-nav-bar-link"
+          >Klimatyzator ME</a
+        >
+        <a
+          href="/Omega-site-html-template/klimatyzatory-lg"
+          class="mobile-nav-bar-link"
+          >Klimatyzatory LG</a
+        >
+        <a
+          href="/Omega-site-html-template/klimatyzator-gree"
+          class="mobile-nav-bar-link"
+          >Klimatyzator GREE</a
+        >
+        <a
+          href="/Omega-site-html-template/dobór-klimy"
+          class="mobile-nav-bar-link"
+          >Dobór klimy/Pompy ciepła</a
+        >
+        <a
+          href="/Omega-site-html-template/pliki-do-pobrania"
+          class="mobile-nav-bar-link"
+          >Pliki do pobrania</a
+        >
+        <a href="/Omega-site-html-template/kontakt" class="mobile-nav-bar-link"
+          >Kontakt</a
+        >
+      </div>
+    </div>
+
+    <nav class="desktop-nav-bar">
       <a href="/Omega-site-html-template/index" class="link">
         <img src="assets/logo.jpg" alt="logo omega" class="logo" />
       </a>
@@ -72,29 +129,28 @@
           >Kontakt</a
         >
       </div>
-
-      <!-- <a href="/index.html" class="link">
-        <img
-          src="assets/omega-logo-screenshot.png"
-          alt="logo omega"
-          class="logo"
-        />
-      </a>
-      <a href="/o-firmie.html" class="link">O firmie</a>
-      <a href="/klimatyzator-me.html" class="link">Klimatyzator me</a>
-      <a href="/klimatyzatory-lg.html" class="link">Klimatyzatory lg</a>
-      <a href="/kimatyzator-gree.html" class="link">Klimatyzator gree</a>
-      <a href="/dobór-klimy.html" class="link">Dobór klimy/pompy ciepła</a>
-      <a hreD="/pliki-do-pobrania.html" class="link">Pliki do pobrania</a>
-      <a href="/kontakt.html" class="link">Kontakt</a> -->
     </nav>
 
-    <h2 class="klimatyzatory-lg-header">Klimatyzatory LG</h2>
+    <h2 class="main-header">Klimatyzatory LG</h2>
 
     <main>
-      <div class="text-container">
-        <div class="text-wrapper">
-          <p class="text">
+      <div class="me-text-container">
+        <div class="me-logo-wrapper">
+          <a
+            href="https://strefaklimatyzacji.pl/"
+            class="ME-link"
+            target="_blank"
+          >
+            <img
+              src="assets/LG/1280px-LG_logo_(2015).png"
+              alt="LG logo"
+              class="me-logo"
+            />
+          </a>
+        </div>
+
+        <div class="me-text-wrapper">
+          <p class="content-paragraph">
             Firma LG jest obecna na polskim rynku klimatyzacji od wielu lat.
             Klimatyzatory LG to połączenie przystępnej ceny z wysoką jakością -
             3 lata gwarancji na urządzenia - 10 lat gwarancji na komresory -
@@ -105,7 +161,7 @@
             klimatyzatorów LG zaprasza do skorzytania z oferty.
           </p>
 
-          <p class="text">
+          <p class="content-paragraph">
             Polecamy stronę www z urządzeniami LG:
             <a
               href="https://strefaklimatyzacji.pl/ "
@@ -115,41 +171,22 @@
             >Na ww. stronie szczegółowe dane oferty klimatyzacyjnej LG
           </p>
         </div>
-        <img
-          src="assets/LG/1280px-LG_logo_(2015).png"
-          alt="LG logo"
-          class="lg-logo"
-        />
       </div>
 
-      <!-- Tutaj 2 anchor tagi ale bez podanego linku (aktualny cennik i katalog urządzeń) -->
-      <div class="links-wrapper">
+      <p class="product-example-header">
+        <strong>Klimatyzatory pokojowe ścienne - Standard 2</strong>
+      </p>
+      <!-- <div class="links-wrapper">
         <a href="#" class="link">Aktualny cennik klimatyzatorów LG 2021</a>
         <a href="#" class="link">Katalog urządzeń LG 2020 (plik PDF)</a>
-      </div>
+      </div> -->
 
       <section class="product-example">
-        <p><strong>Klimatyzatory pokojowe ścienne - Standard 2</strong></p>
-        <!-- Brak linku do katalogu-->
-        <p>Opis i dostępne modele w <a href="#" class="link">katalogu LG</a></p>
-
-        <div class="AC-example-container">
-          <img
-            src="assets/LG/LG_s09EQ.jpg"
-            alt="Example air conditioner"
-            class="AC-img"
-          />
-          <p class="AC-example-desc">
-            Dwustronny nawiew, mocne chłodzenie i skuteczne ogrzewanie, filtr
-            podwójna ochrona,<br />
-            automatyczne oczyszczanie, komfortowy nawiew powietrza<br />
-            Klasa energetyczna A++/A+
-          </p>
-        </div>
+        <!-- <p>Opis i dostępne modele w <a href="#" class="link">katalogu LG</a></p> -->
 
         <table>
           <tbody>
-            <tr class="firs-row">
+            <tr class="first-row">
               <th>model</th>
               <th>chłodzenie/grzanie</th>
               <th>obsługiwana pow.</th>
@@ -159,40 +196,58 @@
             <tr class="row">
               <td>S09ET</td>
               <td>2,5 / 3,3 kW</td>
-              <td> 26 &#13217 </td>
+              <td>26 &#13217;</td>
               <td>3810</td>
             </tr>
 
             <tr class="row">
               <td>S12ET</td>
               <td>3,5 / 4,0 kW</td>
-              <td>35 &#13217</td>
+              <td>35 &#13217;</td>
               <td>4020</td>
             </tr>
             <tr class="row">
               <td>S18ET</td>
               <td>5,0 / 5,8 kW</td>
-              <td>50 &#13217</td>
+              <td>50 &#13217;</td>
               <td>5820</td>
             </tr>
             <tr class="row">
               <td>S24ET</td>
               <td>6,6 / 7,5 kW</td>
-              <td>66 &#13217</td>
+              <td>66 &#13217;</td>
               <td>7000</td>
             </tr>
           </tbody>
         </table>
+        <div class="AC-example-container">
+          <img
+            src="assets/LG/LG_s09EQ.jpg"
+            alt="Example air conditioner"
+            class="LG-AC-img"
+          />
+
+          <ul class="AC-example_list">
+            <li class="AC-example_list-item">
+              Dwustronny nawiew, mocne chłodzenie i skuteczne ogrzewanie, filtr
+              podwójna ochrona,
+            </li>
+            <li class="AC-example_list-item">
+              automatyczne oczyszczanie, komfortowy nawiew powietrza
+            </li>
+            <li class="AC-example_list-item">Klasa energetyczna A++/A+ ></li>
+          </ul>
+        </div>
       </section>
 
-      <section class="another-examples-section">
+      <!-- <section class="another-examples-section">
         <h3 class="another-examples-section_header">
           Pozostałe modele klimatyzatorów LG
         </h3>
 
         <div class="artcool-gallery-container">
           <p><strong>ARTCOOL Gallery</strong></p>
-          <!--Brak linku-->
+
           <p>dostępne modele w <a href="#" class="link">katalogu LG</a></p>
           <div class="img-wrapper">
             <img
@@ -212,7 +267,7 @@
           <p><strong>Dual Cool</strong></p>
 
           <p>Klimatyzator z oczyszczaczem powietrza</p>
-          <!--Brak linku-->
+
           <p>dostępne modele w <a href="#" class="link">katalogu LG</a></p>
           <img
             src="assets/LG/lg_dual_cool.jpg"
@@ -224,7 +279,6 @@
         <div class="artcool-silver-and-mirror-container">
           <p><strong>Artcool Silver i Artcool Mirror</strong></p>
 
-          <!--Brak linku-->
           <p>dostępne modele w <a href="#" class="link">katalogu LG</a></p>
           <img
             src="assets/LG/lg_artcool_silver_19.png"
@@ -240,7 +294,7 @@
 
         <div class="deluxe-container">
           <p><strong>Deluxe</strong></p>
-          <!--Brak linku-->
+
           <p>dostępne modele w <a href="#" class="link">katalogu LG</a></p>
           <img
             src="assets/LG/lg_deluxe_2019.jpg"
@@ -251,7 +305,7 @@
 
         <div class="standard-plus-container">
           <p><strong>Standard plus</strong></p>
-          <!--Brak linku-->
+
           <p>dostępne modele w <a href="#" class="link">katalogu LG</a></p>
           <img
             src="assets/LG/lg_standard_plus_2019.jpg"
@@ -273,7 +327,7 @@
             class="img"
           />
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer>

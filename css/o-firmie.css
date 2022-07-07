@@ -1,12 +1,3 @@
-.o-firmie-header {
-  font-size: clamp(2rem, 2vw, 4rem);
-  width: 100%;
-  text-align: center;
-  background-color: rgba(0, 29, 35, 0.9);
-  color: var(--color-white);
-  padding: 5rem 0;
-}
-
 li::marker {
   content: "❄";
   letter-spacing: 0.7rem;
@@ -31,7 +22,7 @@ li::marker {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: clamp(5rem, 5vw, 15rem);
   padding: 10rem 2rem;
 }
 
@@ -40,8 +31,9 @@ li::marker {
 }
 
 .o-firmie-img {
-  width: 30%;
+  width: 45%;
   min-width: 60rem;
+  max-width: 75rem;
 }
 
 @media (max-width: 650px) {
@@ -57,13 +49,5 @@ li::marker {
 
   .o-firmie-text-wrapper {
     padding: 1rem;
-  }
-}
-
-@media (max-width: 850px) {
-  .o-firmie-header {
-    font-size: clamp(2rem, 2vw, 4rem);
-    padding: 3rem 0;
-    margin-top: 8rem;
   }
 }
