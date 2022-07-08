@@ -27,7 +27,9 @@ li::marker {
 }
 
 .o-firmie-text-wrapper {
+  width: 40%;
   max-width: 90rem;
+  min-width: 50rem;
 }
 
 .o-firmie-img {
@@ -49,5 +51,7 @@ li::marker {
 
   .o-firmie-text-wrapper {
     padding: 1rem;
+    width: 80%;
+    min-width: 25rem;
   }
 }

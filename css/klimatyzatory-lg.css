@@ -1,3 +1,140 @@
+/* .container {
+  min-height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
 .LG-AC-img {
   width: 65%;
+}
+
+.LG-AC-example-container {
+  transform: translateY(-15%);
+}
+
+.LG-product-example {
+  align-items: center;
+}
+
+#LG-second-header {
+  font-size: clamp(1.6rem, 2vw, 2.5rem);
+  padding: 3rem 0;
+  margin-bottom: 10rem;
+}
+
+.LG-product-example-header {
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  width: 20%;
+  min-width: 10rem;
+  text-align: center;
+  margin: 10rem auto;
+  background-color: rgba(0, 159, 228, 0.9);
+  color: var(--color-white);
+  border-radius: 2rem;
+  padding: 2.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.LG-product-example-header:hover {
+  transform: scale(1.1);
+}
+.img-wrapper {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+.ARG-container,
+.DUA-container,
+.AA-container,
+.DE-container,
+.SP-container,
+.AF-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.DUA-container,
+.DE-container,
+.AA-container,
+.SP-container,
+.AF-container {
+  gap: clamp(5rem, 5vw, 15rem);
+}
+
+.left-img,
+.right-img,
+.top-img,
+.bottom-img,
+.SP-img,
+.DE-img,
+.dual-cool-img,
+.AF-img {
+  min-width: 35rem;
+}
+
+.left-img,
+.right-img {
+  width: 30%;
+}
+
+.SP-img,
+.DE-img {
+  width: 30%;
+  max-width: 50rem;
+}
+
+.SP-img {
+  margin-right: 5rem;
+}
+
+.dual-cool-img {
+  width: 30%;
+  max-width: 55rem;
+}
+
+.AA-img-wrapper {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.top-img,
+.bottom-img {
+  width: 70%;
+  max-width: 40rem;
+}
+
+.additional-offer-section {
+  margin-bottom: 5rem;
+}
+
+.AF-img {
+  width: 40%;
+}
+
+.AF-paragraph {
+  font-size: 1.6rem;
+  width: 40%;
+}
+
+@media (max-width: 650px) {
+  .LG-product-example-header {
+    width: 50%;
+    padding: 1.5rem 1rem;
+    margin: 3rem auto;
+  }
+
+  .img-wrapper {
+    width: 100%;
+    margin: 2rem 0;
+  }
 }
