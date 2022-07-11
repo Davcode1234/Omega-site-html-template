@@ -20,7 +20,7 @@ window.addEventListener("resize", () => {
   }
 });
 
-const isMobile = window.matchMedia("(max-width: 100px").matches;
+const isMobile = window.matchMedia("(max-width: 1000px").matches;
 
 if (isMobile) {
   desktopNavBar.style.display = "none";
