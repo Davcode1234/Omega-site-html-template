@@ -1,0 +1,55 @@
+.gree-text-wrapper {
+  width: 70%;
+  max-width: 80rem;
+}
+
+.GREE-product-example {
+  flex-direction: column;
+}
+
+.GREE-AC-example-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.GREE-product-example {
+  align-items: center;
+}
+
+.gree-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gree-ac-img {
+  width: 50%;
+  min-width: 35rem;
+  max-width: 60rem;
+}
+
+.GREE-AC-example-list {
+  max-width: 70rem;
+}
+
+.LO-img {
+  width: 30%;
+  max-width: 60rem;
+  min-width: 30rem;
+}
+
+.UC-img {
+  width: 20%;
+  max-width: 45rem;
+  min-width: 30rem;
+}
+
+.atest-list {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 650px) {
+  .GREE-AC-example-list {
+    margin-left: 5rem;
+  }
+}

@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/eY6NupGvoiW1qPGjc8C5.png"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,7 +39,7 @@
   </head>
   <body>
     <div class="blue-stripe">
-      <div class="wrapper">
+      <div class="wrapper first-wrapper">
         <i class="fa-solid fa-location-dot"></i>
         <p class="address nav-info">ul. Olszynowa 11 39-200 Dębica</p>
       </div>
@@ -43,16 +48,75 @@
         <p class="number nav-info">502 342 031</p>
       </div>
       <div class="wrapper">
-        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto: bok@klimatyzatory-omega.pl">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
         <p class="e-mail nav-info">bok@klimatyzatory-omega.pl</p>
       </div>
+      <div class="wrapper last-wrapper">
+        <a
+          href="https://www.facebook.com/omegaklimatyzatory/?ref=hl"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <p class="nav-info">Odwiedź nas na Facebooku!</p>
+      </div>
     </div>
-    <nav class="nav-bar">
+    <div class="mobile-nav-bar">
+      <div class="mobile-nav-bar-container">
+        <a href="/Omega-site-html-template/index" class="link">
+          <img src="assets/logo.jpg" alt="logo omega" class="mobile-logo" />
+        </a>
+        <button class="mobile-btn"></button>
+      </div>
+
+      <div class="slider-menu">
+        <a href="/Omega-site-html-template/index" class="mobile-nav-bar-link">
+          Home
+        </a>
+
+        <a href="/Omega-site-html-template/o-firmie" class="mobile-nav-bar-link"
+          >O firmie</a
+        >
+        <a
+          href="/Omega-site-html-template/klimatyzator-me"
+          class="mobile-nav-bar-link"
+          >Klimatyzator ME</a
+        >
+        <a
+          href="/Omega-site-html-template/klimatyzatory-lg"
+          class="mobile-nav-bar-link"
+          >Klimatyzatory LG</a
+        >
+        <a
+          href="/Omega-site-html-template/klimatyzator-gree"
+          class="mobile-nav-bar-link"
+          >Klimatyzator GREE</a
+        >
+        <a
+          href="/Omega-site-html-template/dobór-klimy"
+          class="mobile-nav-bar-link"
+          >Dobór klimy/Pompy ciepła</a
+        >
+        <a
+          href="/Omega-site-html-template/pliki-do-pobrania"
+          class="mobile-nav-bar-link"
+          >Pliki do pobrania</a
+        >
+        <a href="/Omega-site-html-template/kontakt" class="mobile-nav-bar-link"
+          >Kontakt</a
+        >
+      </div>
+    </div>
+
+    <nav class="desktop-nav-bar">
       <a href="/Omega-site-html-template/index" class="link">
         <img src="assets/logo.jpg" alt="logo omega" class="logo" />
       </a>
       <div class="text-links">
-        <a href="o-firmie.html" class="link">O firmie</a>
+        <a href="/Omega-site-html-template/o-firmie" class="link">O firmie</a>
         <a href="/Omega-site-html-template/klimatyzator-me" class="link"
           >Klimatyzator ME</a
         >
@@ -72,29 +136,27 @@
           >Kontakt</a
         >
       </div>
-
-      <!-- <a href="/index.html" class="link">
-        <img
-          src="assets/omega-logo-screenshot.png"
-          alt="logo omega"
-          class="logo"
-        />
-      </a>
-      <a href="/o-firmie.html" class="link">O firmie</a>
-      <a href="/klimatyzator-me.html" class="link">Klimatyzator me</a>
-      <a href="/klimatyzatory-lg.html" class="link">Klimatyzatory lg</a>
-      <a href="/kimatyzator-gree.html" class="link">Klimatyzator gree</a>
-      <a href="/dobór-klimy.html" class="link">Dobór klimy/pompy ciepła</a>
-      <a hreD="/pliki-do-pobrania.html" class="link">Pliki do pobrania</a>
-      <a href="/kontakt.html" class="link">Kontakt</a> -->
     </nav>
 
-    <h2 class="klimatyzatory-gree-header">Klimatyzatory Gree</h2>
+    <h2 class="main-header">Klimatyzatory Gree</h2>
 
     <main>
-      <div class="text-container">
-        <div class="text-wrapper">
-          <p>
+      <div class="me-text-container">
+        <div class="me-logo-wrapper">
+          <a href="https://gree.pl/" class="ME-link" target="_blank">
+            <img
+              src="assets/Gree/gree-electric-appliances.svg"
+              alt="Mitsubishi Electric Logo"
+              class="me-logo"
+            />
+          </a>
+        </div>
+
+        <div class="gree-text-wrapper">
+          <p class="content-paragraph">
+            <strong>Klimatyzatory GREE</strong>
+          </p>
+          <p class="content-paragraph">
             Marka GREE to już 25 lat doświadczenia w produkcji klimatyzatorów.
             Działa na sześciu kontynentach, w Polsce od ponad 10 lat. Producent
             może pochwalić się, że co trzeci klimatyzator na świecie został
@@ -106,6 +168,7 @@
             Oferuje różne urządzenia od podstawowych modeli wyposażonych w wiele
             funkcji z wyższej półki - popularny model Pular - po luksusowe
             eleganckie klimatyzatory a także systemy multi oraz komercyjne.<br />
+            <br />
             Wszystkie klimatyzatory ścienne GREE posiadają w standardzie funkcję
             sterowania za pomocą smartfona.Wystarczy, że klimatyzator znajduje
             się w zasięgu lokalnej (np. domowej) sieci Wi-Fi.<br />
@@ -118,47 +181,53 @@
               >Aplikacja Wi-Fi GREE+</a
             >
           </p>
-          <p>
+          <p class="content-paragraph">
             Wszystkie klimatyzatory są objęte
             <strong>pięcioletnią gwarancją.</strong>
           </p>
         </div>
-        <img
-          src="assets/Gree/gree-electric-appliances.svg"
-          alt=""
-          class="logo gree-logo"
-        />
       </div>
 
-      <section class="product-example">
-        <p>Klimatyzator śceinny - seria <strong>PULAR</strong> - czynnik R32</p>
-
-        <div class="first-section">
+      <p class="product-example-header">
+        Klimatyzator śceinny - seria <strong>PULAR</strong> - czynnik R32
+      </p>
+      <section class="product-example GREE-product-example">
+        <div class="AC-example-container GREE-AC-example-container">
           <img
             src="assets/Gree/gree-pular1.jpg"
             alt="Image of gree pular1"
-            class="gree-example-img"
+            class="AC-img gree-ac-img"
           />
-          <p class="AC-example-desc">
-            urządzenia w atrakcyjnej cenie, bogate możliwości sterowania, także
-            zdalnego przez Wi-Fi,<br />ustawienie czasu włączania i wyłączania w
-            trybie dobowym, jonizator powietrza, funkcja samooczyszczania
-            wymiennika jednostki wewnętrznej,<br />automatyczne żaluzje poziome
-            i pionowe, niskie zużycie energii<br />dokładny opis i dostępne
-            modele w
-            <a
-              href="http://oldweb.klimatyzatory-omega.pl/public/Katalog_GREE_klimatyzatory_2022.pdf"
-              class="link"
-              target="_blank"
-              >katalogu</a
-            >
-            <br />Klasa energetyczna A++/A+
-          </p>
+
+          <ul class="AC-example_list GREE-AC-example-list">
+            <li class="AC-example_list-item">
+              Urządzenia w atrakcyjnej cenie, bogate możliwości sterowania,
+              także zdalnego przez Wi-Fi
+            </li>
+            <li class="AC-example_list-item">
+              Ustawienie czasu włączania i wyłączania w trybie dobowym,
+              jonizator powietrza, funkcja samooczyszczania wymiennika jednostki
+              wewnętrznej
+            </li>
+            <li class="AC-example_list-item">
+              Automatyczne żaluzje poziome i pionowe, niskie zużycie energii
+            </li>
+            <li class="AC-example_list-item">
+              Opis i dostępne modele w
+              <a
+                href="http://oldweb.klimatyzatory-omega.pl/public/Katalog_GREE_klimatyzatory_2022.pdf"
+                class="me-link"
+                target="_blank"
+                >katalogu GREE 2022</a
+              >
+            </li>
+            <li class="AC-example_list-item">Klasa energetyczna A++/A+</li>
+          </ul>
         </div>
 
         <table>
           <tbody>
-            <tr class="firs-row">
+            <tr class="first-row">
               <th>model</th>
               <th>chłodzenie/grzanie</th>
               <th>obsługiwana pow.</th>
@@ -168,165 +237,204 @@
             <tr class="row">
               <td>GWH09AGA-K6DNA1A</td>
               <td>2,5 / 2,8 kW</td>
-              <!-- <td> 25 &#13217 </td> -->
+              <td>25 &#13217;</td>
               <td>2 890</td>
             </tr>
 
             <tr class="row">
               <td>GWH12AGB-K6DNA1A</td>
               <td>3,2 / 3,4 kW</td>
-              <!-- <td>35 &#13217</td> -->
+              <td>35 &#13217;</td>
               <td>3 190</td>
             </tr>
             <tr class="row">
               <td>GWH18AGD-K6DNA1D</td>
               <td>4,6 / 5,2 kW</td>
-              <!-- <td>45 &#13217</td> -->
+              <td>45 &#13217;</td>
               <td>4 490</td>
             </tr>
             <tr class="row">
               <td>GWH24AGD-K6DNA1C</td>
               <td>6,2 / 6,5 kW</td>
-              <!-- <td>60 &#13217</td> -->
+              <td>60 &#13217;</td>
               <td>5 890</td>
             </tr>
           </tbody>
         </table>
+      </section>
+      <a
+        href="http://oldweb.klimatyzatory-omega.pl/public/Cennik__GREE_klimatyzatory_wiosenny_2022.pdf"
+        class="me-link gree-link"
+        >Aktualny cennik klimatyzatorów GREE</a
+      >
 
-        <p><strong>Inne popularne modele:</strong></p>
+      <section class="another-examples-section">
+        <h2 id="LG-second-header" class="main-header">
+          Inne popularne modele:
+        </h2>
 
-        <div class="second-section">
-          <div class="first-example">
-            <p><strong>LOMO Luxury R32</strong></p>
-            <p>
-              dokładny opis i modele w
-              <a
-                href="http://oldweb.klimatyzatory-omega.pl/public/Katalog_GREE_klimatyzatory_2022.pdf"
-                class="link"
-                target="_blank"
-                >katalogu Gree 2022</a
-              >
-            </p>
+        <div class="artcool-gallery-container">
+          <p class="LG-product-example-header">
+            <strong>LOMO Luxury R32 </strong>
+          </p>
+
+          <div class="DUA-container">
             <img
               src="assets/Gree/gree_lomo_luxury1.jpg"
-              alt="Gree Lomo luxury1 image"
-              class="example-img"
+              alt="gallery picture"
+              class="LO-img"
             />
+
+            <ul class="AC-example_list">
+              <li class="AC-example_list-item">
+                Wysokie parametry pracy i różnorodne funkcje
+              </li>
+              <li class="AC-example_list-item">
+                Możliwość sterowania nawiewem powietrza w pionie i poziomie
+              </li>
+              <li class="AC-example_list-item">
+                Duży zakres biegów wentylatora i trybów snu
+              </li>
+              <li class="AC-example_list-item">
+                Więcej informacji:
+                <a
+                  href="http://oldweb.klimatyzatory-omega.pl/public/Katalog_GREE_klimatyzatory_2022.pdf"
+                  class="me-link"
+                  target="_blank"
+                  >Katalog GREE 2022</a
+                >
+              </li>
+            </ul>
           </div>
-
-          <div class="second-example">
-            <p><strong>U-CROWN</strong></p>
-            <p>
-              dokładny opis i modele w
-              <a
-                href="http://oldweb.klimatyzatory-omega.pl/public/Katalog_GREE_klimatyzatory_2022.pdf"
-                class="link"
-                target="_blank"
-                >katalogu Gree 2022</a
-              >
-            </p>
-            <img
-              src="assets/Gree/gree_u_crown_2015.jpg"
-              alt="Gree U-CROWN image"
-              class="example-img"
-            />
-          </div>
-
-          <div class="third-example">
-            <p><strong>AMBER</strong></p>
-            <p>
-              dokładny opis i modele w
-              <a
-                href="http://oldweb.klimatyzatory-omega.pl/public/Katalog_GREE_klimatyzatory_2022.pdf"
-                class="link"
-                target="_blank"
-                >katalogu Gree 2022</a
-              >
-            </p>
-            <img
-              src="assets/Gree/gree_amber.jpg"
-              alt="Gree U-CROWN image"
-              class="example-img"
-            />
-          </div>
-
-          <a
-            href="http://oldweb.klimatyzatory-omega.pl/public/Cennik__GREE_klimatyzatory_wiosenny_2022.pdf"
-            class="link"
-            target="_blank"
-            >Aktualny cennik klimatyzatorów GREE (plik PDF)</a
-          >
-
-          <a
-            href="http://oldweb.klimatyzatory-omega.pl/public/Katalog_GREE_klimatyzatory_2022.pdf"
-            class="link"
-            target="_blank"
-            >Najnowszy katalog produktów GREE (plik PDF)</a
-          >
         </div>
 
-        <div class="third-section">
-          <h3 class="second-header">Oferujemy także:</h3>
+        <div class="dual-cool-container">
+          <p class="LG-product-example-header"><strong>U-CROWN</strong></p>
 
-          <div class="third-section-container">
-            <p>
+          <div class="DUA-container">
+            <ul class="AC-example_list">
+              <li class="AC-example_list-item">
+                Nietypowy przekrój w kształcie litery U, piękny metalizowany
+                panel i elegancki styl
+              </li>
+              <li class="AC-example_list-item">
+                Wysokie parametry i szeroki zasób funkcji
+              </li>
+              <li class="AC-example_list-item">
+                Efektywna i cicha praca w trybie chłodzenia jak i grzania
+              </li>
+              <li class="AC-example_list-item">
+                Więcej informacji:
+                <a
+                  href="http://oldweb.klimatyzatory-omega.pl/public/Katalog_GREE_klimatyzatory_2022.pdf"
+                  class="me-link"
+                  target="_blank"
+                  >Katalog GREE 2022</a
+                >
+              </li>
+            </ul>
+            <img
+              src="assets/Gree/gree_u_crown_2015.jpg"
+              alt="picture of dual cool model"
+              class="UC-img"
+            />
+          </div>
+        </div>
+
+        <div class="standard-plus-container">
+          <p class="LG-product-example-header">
+            <strong>AMBER</strong>
+          </p>
+
+          <div class="SP-container">
+            <img
+              src="assets/Gree/gree_amber.jpg"
+              alt="Picture of standard plus model"
+              class="SP-img"
+            />
+
+            <ul class="AC-example_list">
+              <li class="AC-example_list-item">
+                Dostępne aż 4 różne wersje kolorystyczne, co ułatwia dopasowanie
+                klimatyzatora do wnętrza pomieszczenia
+              </li>
+              <li class="AC-example_list-item">
+                Wydajne zarówno chłodzenie jak i grzanie
+              </li>
+              <li class="AC-example_list-item">Klasa energetyczna A+++</li>
+              <li class="AC-example_list-item">
+                Więcej informacji:
+                <a
+                  href="http://oldweb.klimatyzatory-omega.pl/public/Katalog_GREE_klimatyzatory_2022.pdf"
+                  class="me-link"
+                  target="_blank"
+                  >Katalog GREE 2022</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="additional-offer-section">
+          <p class="product-example-header">
+            <strong>Oferujemy także:</strong>
+          </p>
+
+          <div class="AF-container">
+            <p class="AF-paragraph">
               Free Match Inverter - seria klimatyzatorów, która daje możliwość
               podłączenia do jednej jednostki zewnętrznej nawet pięciu jednostek
               wewnętrznych. Szczegółowe informacje można znaleźć w
               <a
                 href="http://oldweb.klimatyzatory-omega.pl/public/Katalog_GREE_klimatyzatory_2022.pdf"
-                class="link"
+                class="me-link"
                 target="_blank"
                 >katalogu Gree
               </a>
             </p>
-
             <img
               src="assets/Gree/free_match.jpg"
-              alt="image of free match inverter"
-              class="third-section-img"
+              alt="schema of installation"
+              class="AF-img"
             />
           </div>
+        </div>
 
-          <div class="fourth-section">
-            <h3 class="fourth-section-header">
-              Atesty przyznane urządzeniom GREE:
-            </h3>
+        <div class="atests-section">
+          <p class="product-example-header">
+            <strong>Atesty przyznane urządzeniom GREE:</strong>
+          </p>
 
-            <ul class="list">
+          <div class="AF-container">
+            <img
+              src="assets/Gree/dc7a4598fd3319d51194808b84627e8f.jpg"
+              alt="schema of installation"
+              class="AF-img"
+            />
+            <ul class="AC-example_list atest-list">
               <li class="list-item">
                 <a
                   href="http://oldweb.klimatyzatory-omega.pl/public/download/atest_higieniczny_GREE_scienne.pdf"
-                  class="link"
+                  class="me-link"
                   target="_blank"
-                  >atest higieniczny - klimatyzatory ścienne</a
+                  >Atest higieniczny - klimatyzatory ścienne</a
                 >
               </li>
               <li class="list-item">
                 <a
                   href="http://oldweb.klimatyzatory-omega.pl/public/download/atest_higieniczny_GREE_free_match.pdf"
-                  class="link"
+                  class="me-link"
                   target="_blank"
-                  >atest higieniczny - klimatyzatory Free Match</a
+                  >Atest higieniczny - klimatyzatory Free Match</a
                 >
               </li>
               <li class="list-item">
-                <!-- Brak linku -->
-                <a href="#" class="link" target="_blank"
-                  >spis atestów higienicznych klimatyzatorów GREE (aktualizacja
+                <a href="#" class="me-link"
+                  >Spis atestów higienicznych klimatyzatorów GREE (aktualizacja
                   2018)</a
                 >
               </li>
             </ul>
-
-            <p>Zapraszamy również na stronę dystrybutora urządzeń GREE:</p>
-            <a
-              href="https://gree.pl/produkty/klimatyzatory/scienne/"
-              class="link"
-              target="_blank"
-              >Klimatyzatory ścienne Gree - klimatyzator do domu i mieszkania |
-              Gree</a
-            >
           </div>
         </div>
       </section>
