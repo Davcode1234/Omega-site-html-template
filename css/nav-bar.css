@@ -56,7 +56,7 @@
 .link,
 .contact-link {
   text-decoration: none;
-  font-size: clamp(1rem, 1vw, 1.5rem);
+  font-size: 1.6rem;
   font-weight: 600;
   color: var(--secondary-color);
   transition: all 0.2s ease-in;

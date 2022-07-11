@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/eY6NupGvoiW1qPGjc8C5.png"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,7 +39,7 @@
   </head>
   <body>
     <div class="blue-stripe">
-      <div class="wrapper">
+      <div class="wrapper first-wrapper">
         <i class="fa-solid fa-location-dot"></i>
         <p class="address nav-info">ul. Olszynowa 11 39-200 Dębica</p>
       </div>
@@ -43,16 +48,75 @@
         <p class="number nav-info">502 342 031</p>
       </div>
       <div class="wrapper">
-        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto: bok@klimatyzatory-omega.pl">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
         <p class="e-mail nav-info">bok@klimatyzatory-omega.pl</p>
       </div>
+      <div class="wrapper last-wrapper">
+        <a
+          href="https://www.facebook.com/omegaklimatyzatory/?ref=hl"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <p class="nav-info">Odwiedź nas na Facebooku!</p>
+      </div>
     </div>
-    <nav class="nav-bar">
+    <div class="mobile-nav-bar">
+      <div class="mobile-nav-bar-container">
+        <a href="/Omega-site-html-template/index" class="link">
+          <img src="assets/logo.jpg" alt="logo omega" class="mobile-logo" />
+        </a>
+        <button class="mobile-btn"></button>
+      </div>
+
+      <div class="slider-menu">
+        <a href="/Omega-site-html-template/index" class="mobile-nav-bar-link">
+          Home
+        </a>
+
+        <a href="/Omega-site-html-template/o-firmie" class="mobile-nav-bar-link"
+          >O firmie</a
+        >
+        <a
+          href="/Omega-site-html-template/klimatyzator-me"
+          class="mobile-nav-bar-link"
+          >Klimatyzator ME</a
+        >
+        <a
+          href="/Omega-site-html-template/klimatyzatory-lg"
+          class="mobile-nav-bar-link"
+          >Klimatyzatory LG</a
+        >
+        <a
+          href="/Omega-site-html-template/klimatyzator-gree"
+          class="mobile-nav-bar-link"
+          >Klimatyzator GREE</a
+        >
+        <a
+          href="/Omega-site-html-template/dobór-klimy"
+          class="mobile-nav-bar-link"
+          >Dobór klimy/Pompy ciepła</a
+        >
+        <a
+          href="/Omega-site-html-template/pliki-do-pobrania"
+          class="mobile-nav-bar-link"
+          >Pliki do pobrania</a
+        >
+        <a href="/Omega-site-html-template/kontakt" class="mobile-nav-bar-link"
+          >Kontakt</a
+        >
+      </div>
+    </div>
+
+    <nav class="desktop-nav-bar">
       <a href="/Omega-site-html-template/index" class="link">
         <img src="assets/logo.jpg" alt="logo omega" class="logo" />
       </a>
       <div class="text-links">
-        <a href="o-firmie.html" class="link">O firmie</a>
+        <a href="/Omega-site-html-template/o-firmie" class="link">O firmie</a>
         <a href="/Omega-site-html-template/klimatyzator-me" class="link"
           >Klimatyzator ME</a
         >
@@ -72,31 +136,16 @@
           >Kontakt</a
         >
       </div>
-
-      <!-- <a href="/index.html" class="link">
-        <img
-          src="assets/omega-logo-screenshot.png"
-          alt="logo omega"
-          class="logo"
-        />
-      </a>
-      <a href="/o-firmie.html" class="link">O firmie</a>
-      <a href="/klimatyzator-me.html" class="link">Klimatyzator me</a>
-      <a href="/klimatyzatory-lg.html" class="link">Klimatyzatory lg</a>
-      <a href="/kimatyzator-gree.html" class="link">Klimatyzator gree</a>
-      <a href="/dobór-klimy.html" class="link">Dobór klimy/pompy ciepła</a>
-      <a hreD="/pliki-do-pobrania.html" class="link">Pliki do pobrania</a>
-      <a href="/kontakt.html" class="link">Kontakt</a> -->
     </nav>
 
-    <h2 class="dobor-klimy-header">Dobór klimy/pompy</h2>
+    <h2 class="main-header">Dobór klimy/pompy</h2>
 
     <main>
       <section class="dobor-klimatyzatora">
-        <h3 class="header">Dobór klimatyzatora</h3>
+        <h3 class="LG-product-example-header">Dobór klimatyzatora</h3>
 
-        <div class="text-wrapper">
-          <p>
+        <div class="first-text-wrapper">
+          <p class="content-paragraph">
             Aby dokonać wstępnego doboru klimatyzatora do pomieszczenia należy
             określić jaka jest
             <strong>powierzchnia pomieszczenia.</strong> Następnie pomnożyć
@@ -105,14 +154,12 @@
             moc chłodniczą/grzewczą klimatyzatora (w watach).
           </p>
 
-          <p>
-            Przykład obliczeń:<br /><span class="text-color"
-              >powierzchnia pomieszczenia - 35 m2, zatem 35 x 100 = 3500
-              Wat</span
-            >
+          <p class="content-paragraph">
+            Przykład obliczeń:<br />powierzchnia pomieszczenia -
+            <span class="text-color">35 m2, zatem 35 x 100 = 3500 Wat</span>
           </p>
 
-          <p>
+          <p class="content-paragraph">
             Zatem klimatyzator powinien mieć moc chłodniczą ok. 3,5kW. Jest to
             najprostsza metoda wstępnego oszacowania zapotrzebowania na moc
             chłodniczą. Podany schemat doboru klimatyzatora dotyczy pomieszczeń
@@ -123,12 +170,12 @@
             <strong> współczynnik 40W/m3.</strong>
           </p>
 
-          <p>
+          <p class="content-paragraph">
             Przykład obliczeń <br />kubatura pomieszczenia -
             <span class="text-color">87,5 m3; zatem 87,5 x 40 = 3500 Wat</span>
           </p>
 
-          <p>
+          <p class="content-paragraph">
             Jeśli pomieszczenie posiada duże zyski ciepła pochodzące od: dużych
             powierzchni przeszklonych, słabo izolowanych termicznie ścian, czy
             dużej ilości sprzętu komputerowego można do wstępnej oceny
@@ -147,71 +194,84 @@
       </section>
 
       <section class="dobor-pompy-ciepla">
-        <h3 class="header">Dobór pompy ciepła</h3>
+        <h3 class="LG-product-example-header">Dobór pompy ciepła</h3>
 
-        <table>
-          <tbody>
-            <tr>
-              <td><p>Rodzaj budownictwa</p></td>
-              <td><p>Współczynnik zapotrzebowania</p></td>
-            </tr>
-            <tr>
-              <td>
-                <p>
-                  Budownictwo stare, nieizolowane (budynki z lat 70-80-tych)
-                </p>
-              </td>
-              <td><p>120-150</p></td>
-            </tr>
-            <tr>
-              <td><p>Budownictwo stare - słaba izolacja - lata 80-90-te</p></td>
-              <td><p>100-120</p></td>
-            </tr>
-            <tr>
-              <td><p>Budownictwo średnio izolowane - wczesne lata 2000</p></td>
-              <td><p>60-80</p></td>
-            </tr>
-            <tr>
-              <td>
-                <p>
-                  Budownictwo nowoczesne, dobrze izolowane (3-szybowe okna,
-                  rekuperacja)
-                </p>
-              </td>
-              <td><p>40-50</p></td>
-            </tr>
-            <tr>
-              <td><p>Budownictwo energooszczędne</p></td>
-              <td><p>20-30</p></td>
-            </tr>
-            <tr>
-              <td><p>Budownictwo pasywne</p></td>
-              <td><p>10-15</p></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="pomp-wrapper">
+          <table>
+            <tbody>
+              <tr class="first-row">
+                <td><p>Rodzaj budownictwa</p></td>
+                <td><p>Współczynnik zapotrzebowania</p></td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    Budownictwo stare, nieizolowane (budynki z lat 70-80-tych)
+                  </p>
+                </td>
+                <td><p>120-150</p></td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Budownictwo stare - słaba izolacja - lata 80-90-te</p>
+                </td>
+                <td><p>100-120</p></td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Budownictwo średnio izolowane - wczesne lata 2000</p>
+                </td>
+                <td><p>60-80</p></td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    Budownictwo nowoczesne, dobrze izolowane (3-szybowe okna,
+                    rekuperacja)
+                  </p>
+                </td>
+                <td><p>40-50</p></td>
+              </tr>
+              <tr>
+                <td><p>Budownictwo energooszczędne</p></td>
+                <td><p>20-30</p></td>
+              </tr>
+              <tr>
+                <td><p>Budownictwo pasywne</p></td>
+                <td><p>10-15</p></td>
+              </tr>
+            </tbody>
+          </table>
 
-        <p>
-          Przykład: dom o powierzchni 100m2, zbudowany w roku 2018, okna 3
-          szybowe, rekuperacja, ściany 20cm izolacji, strop 25cm izolacji -
-          wstępnie można założyć, że wymagana będzie pompa ciepła o mocy
-          grzewczej około 5kW - zgodnie z tabelą 50W/m2 x 100m2 = 5000W
-        </p>
+          <div class="text-wrapper">
+            <p class="content-paragraph">
+              Przykład: dom o powierzchni 100m2, zbudowany w roku 2018, okna 3
+              szybowe, rekuperacja, ściany 20cm izolacji, strop 25cm izolacji -
+              wstępnie można założyć, że wymagana będzie pompa ciepła o mocy
+              grzewczej około 5kW - zgodnie z tabelą 50W/m2 x 100m2 = 5000W
+            </p>
 
-        <p>
-          W internecie można znaleźć strony, które ułatwiają dość precyzyjne
-          wyznaczenie zapotrzebowania mocy grzewczej. Jedną z polecanych stron
-          jest:<a href="https://cieplo.app/" class="link" target="_blank">
-            www.cieplowlasciwie.pl</a
-          ><br />
+            <p class="content-paragraph">
+              W internecie można znaleźć strony, które ułatwiają dość precyzyjne
+              wyznaczenie zapotrzebowania mocy grzewczej. Jedną z polecanych
+              stron jest:<a
+                href="https://cieplo.app/"
+                class="link"
+                target="_blank"
+              >
+                www.cieplowlasciwie.pl</a
+              ><br />
 
-          Po wejściu na stronę klikamy w przycisk "Sprawdź swój dom" i
-          postępujemy zgodnie z sugestiami. Po zakończeniu dość krótkiego i
-          przyjemnego procesu wypełniania danych o budynku dostajemy na e-maila
-          link do obliczeń i wyników oraz drugi linki do edycji danych.<br />
+              Po wejściu na stronę klikamy w przycisk "Sprawdź swój dom" i
+              postępujemy zgodnie z sugestiami. Po zakończeniu dość krótkiego i
+              przyjemnego procesu wypełniania danych o budynku dostajemy na
+              e-maila link do obliczeń i wyników oraz drugi linki do edycji
+              danych.<br />
 
-          Pozostaje skonsultować wyniki obliczeń z instalatorem pomp ciepła.
-        </p>
+              Pozostaje skonsultować wyniki obliczeń z instalatorem pomp ciepła.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
 

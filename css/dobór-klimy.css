@@ -1,0 +1,30 @@
+.pomp-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(5rem, 5vw, 15rem);
+  margin-bottom: 5rem;
+}
+
+.first-text-wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.text-wrapper {
+  width: 50%;
+  max-width: 80rem;
+  min-width: 25rem;
+}
+
+span {
+  color: var(--primary-color);
+}
+
+@media (max-width: 650px) {
+  .text-wrapper {
+    width: 80%;
+  }
+}

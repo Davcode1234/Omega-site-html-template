@@ -1,0 +1,62 @@
+.map {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.contact-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.columns-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.phone-link {
+  display: block;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: clamp(1.4rem, 1vw, 1.6rem);
+  font-weight: 600;
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+  color: var(--primary-color);
+}
+
+.mail-link {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.mail-link:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 1100px) {
+  .map-object {
+    width: 100%;
+  }
+  .map {
+    margin-top: 5rem;
+  }
+}

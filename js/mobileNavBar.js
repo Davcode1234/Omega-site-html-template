@@ -9,7 +9,7 @@ const navBarLink = Array.from(
 );
 
 window.addEventListener("resize", () => {
-  const isMobile = window.matchMedia("(max-width: 850px").matches;
+  const isMobile = window.matchMedia("(max-width: 1000px").matches;
 
   if (isMobile) {
     desktopNavBar.style.display = "none";
@@ -20,7 +20,7 @@ window.addEventListener("resize", () => {
   }
 });
 
-const isMobile = window.matchMedia("(max-width: 850px").matches;
+const isMobile = window.matchMedia("(max-width: 100px").matches;
 
 if (isMobile) {
   desktopNavBar.style.display = "none";
