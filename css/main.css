@@ -1,11 +1,11 @@
-@import url(./home-page.css);
-@import url(./o-firmie.css);
-@import url(./klimatyzatory-me.css);
-@import url(./klimatyzatory-lg.css);
-@import url(./klimatyzatory-gree.css);
-@import url(./dobór-klimy.css);
-@import url(./pliki-do-pobrania.css);
-@import url(./kontakt.css);
+@import url(./pages/home-page.css);
+@import url(./pages/o-firmie.css);
+@import url(./pages/klimatyzatory-me.css);
+@import url(./pages/klimatyzatory-lg.css);
+@import url(./pages/klimatyzatory-gree.css);
+@import url(./pages/dobór-klimy.css);
+@import url(./pages/pliki-do-pobrania.css);
+@import url(./pages/kontakt.css);
 @import url(./footer.css);
 @import url(./nav-bar.css);
 
