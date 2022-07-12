@@ -25,7 +25,7 @@ const disableButton = () => {
 
 function resetInterval() {
   clearInterval(intervalID);
-  intervalID = setInterval(autoPlaySlider, 8000);
+  intervalID = setInterval(autoPlaySlider, 5000);
 }
 
 function addActiveCircle() {
@@ -131,7 +131,7 @@ function autoPlaySlider() {
   }
 }
 
-intervalID = setInterval(autoPlaySlider, 8000);
+intervalID = setInterval(autoPlaySlider, 5000);
 
 carouselSlide.addEventListener("transitionstart", () => {
   disableButton();

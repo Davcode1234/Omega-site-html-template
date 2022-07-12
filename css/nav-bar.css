@@ -183,7 +183,13 @@
   display: inline;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1300px) {
+  .text-links > a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1000px) {
   .blue-stripe {
     position: fixed;
     height: 3rem;

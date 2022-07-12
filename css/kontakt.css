@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10rem;
+  margin: 5rem 0 10rem 0;
 }
 
 .columns-wrapper {
@@ -58,5 +58,10 @@
   }
   .map {
     margin-top: 5rem;
+  }
+
+  .columns-wrapper {
+    gap: 1rem;
+    text-align: center;
   }
 }

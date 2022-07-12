@@ -103,7 +103,6 @@
 table {
   font-size: 1.6rem;
   border-collapse: collapse;
-  margin: 0 1rem;
 }
 
 tr {
@@ -133,6 +132,9 @@ td {
 }
 
 @media (max-width: 700px) {
+  .me-text-container {
+    margin: 5rem 0;
+  }
   .me-text-wrapper {
     width: 80%;
   }
@@ -144,6 +146,10 @@ td {
     margin: 2.5rem auto;
     border-radius: 1.5rem;
     padding: 2.5rem 0.5rem;
+  }
+
+  .product-example {
+    margin: 5rem 0;
   }
 
   .product-example-header::before {

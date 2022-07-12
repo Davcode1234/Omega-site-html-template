@@ -50,6 +50,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-left: 1rem;
 }
 
 .DUA-container,
@@ -82,9 +83,9 @@
   max-width: 50rem;
 }
 
-.SP-img {
+/* .SP-img {
   margin-right: 5rem;
-}
+} */
 
 .dual-cool-img {
   width: 30%;
@@ -126,6 +127,12 @@
     margin: 3rem auto;
   }
 
+  #LG-second-header {
+    font-size: clamp(1.6rem, 2vw, 2.5rem);
+    padding: 3rem 0;
+    margin-bottom: 5rem;
+  }
+
   .img-wrapper {
     width: 100%;
     margin: 2rem 0;
@@ -145,5 +152,13 @@
   .dual-cool-img,
   .AF-img {
     min-width: 25rem;
+  }
+
+  .DUA-container,
+  .DE-container,
+  .AA-container,
+  .SP-container,
+  .AF-container {
+    gap: 3rem;
   }
 }
