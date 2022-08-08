@@ -35,6 +35,7 @@ mobileBtn.addEventListener("click", () => {
   mobileBtn.classList.toggle("active-mobile-btn");
 
   sliderMenu.classList.toggle("active-slider-menu");
+  document.body.classList.toggle("stop-scrolling");
 
   setTimeout(() => {
     navBarLink.forEach((link) => {

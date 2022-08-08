@@ -52,3 +52,8 @@ body {
     margin-top: 8rem;
   }
 }
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
