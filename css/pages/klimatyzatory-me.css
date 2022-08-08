@@ -122,6 +122,10 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
+/* td {
+  padding-left: 100px;
+} */
+
 .first-row {
   background-color: rgba(0, 29, 35, 0.9);
   color: var(--color-white);
@@ -190,6 +194,6 @@ td {
 
   th,
   td {
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
   }
 }
