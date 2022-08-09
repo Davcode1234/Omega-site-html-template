@@ -45,13 +45,16 @@ mobileBtn.addEventListener("click", () => {
   });
 });
 
-// window.addEventListener("pageshow", (event) => {
-//   const historyTraversal =
-//     event.persisted ||
-//     (typeof window.performance != "undefined" &&
-//       window.performance.navigation.type === 2);
+window.addEventListener("pageshow", (event) => {
+  const historyTraversal =
+    event.persisted ||
+    (typeof window.performance != "undefined" &&
+      window.performance.navigation.type === 2);
 
-//   if (historyTraversal) {
-//     window.location.reload();
-//   }
-// });
+  if (historyTraversal) {
+    mobileBtn.classList.remove("active-mobile-btn");
+    sliderMenu.classList.remove("active-slider-menu");
+    document.body.classList.remove("stop-scrolling");
+    link.classList.remove("active-slider-link");
+  }
+});
