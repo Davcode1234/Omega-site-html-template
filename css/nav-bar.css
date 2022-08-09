@@ -167,7 +167,8 @@
 }
 
 .mobile-nav-bar-link {
-  display: none;
+  /* display: none; */
+  transform: translateX(100%);
   text-decoration: none;
   font-size: 1.4rem;
   color: var(--color-white);
@@ -180,7 +181,7 @@
 }
 
 .active-slider-link {
-  display: inline;
+  transform: translateX(0);
 }
 
 @media (max-width: 1300px) {
