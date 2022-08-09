@@ -36,6 +36,10 @@ const removeClassFromLink = () => {
       link.classList.remove("active-slider-link");
     }
   });
+
+  if (mobileBtn.classList.contains("active-mobile-btn")) {
+    mobileBtn.classList.remove("active-mobile-btn");
+  }
 };
 
 mobileBtn.addEventListener("click", () => {
