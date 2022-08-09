@@ -52,9 +52,6 @@ window.addEventListener("pageshow", (event) => {
       window.performance.navigation.type === 2);
 
   if (historyTraversal) {
-    mobileBtn.classList.remove("active-mobile-btn");
-    sliderMenu.classList.remove("active-slider-menu");
-    document.body.classList.remove("stop-scrolling");
-    link.classList.remove("active-slider-link");
+    window.location.reload();
   }
 });
