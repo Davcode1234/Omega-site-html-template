@@ -43,7 +43,14 @@ mobileBtn.addEventListener("click", () => {
 
       link.addEventListener("click", () => {
         sliderMenu.classList.remove("active-slider-menu");
+        link.classList.remove("active-slider-link");
       });
     });
   }, 100);
 });
+
+if (!sliderMenu.classList.contains("active-slider-menu")) {
+  navBarLink.forEach((link) => {
+    link.classList.remove("active-slider-link");
+  });
+}
