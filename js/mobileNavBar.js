@@ -39,6 +39,8 @@ const removeClassFromLink = () => {
 
   if (mobileBtn.classList.contains("active-mobile-btn")) {
     mobileBtn.classList.remove("active-mobile-btn");
+    mobileBtn.classList.add("mobile-btn");
+    document.body.classList.remove("stop-scrolling");
   }
 };
 
