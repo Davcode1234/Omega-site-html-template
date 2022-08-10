@@ -60,16 +60,3 @@ mobileBtn.addEventListener("click", () => {
     });
   }, 100);
 });
-
-// if (isMobile) {
-//   window.addEventListener("pageshow", (event) => {
-//     const historyTraversal =
-//       event.persisted ||
-//       (typeof window.performance != "undefined" &&
-//         window.performance.navigation.type === 2);
-
-//     if (historyTraversal) {
-//       window.location.reload();
-//     }
-//   });
-// }
