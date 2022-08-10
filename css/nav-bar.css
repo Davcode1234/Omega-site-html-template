@@ -175,7 +175,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.mobile-nav-bar-link:focus {
+.mobile-nav-bar-link:active {
   color: var(--primary-color);
   transform: scale(0.9);
   display: none;
