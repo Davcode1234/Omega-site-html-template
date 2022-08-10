@@ -178,7 +178,7 @@
 .mobile-nav-bar-link:active {
   color: var(--primary-color);
   transform: scale(0.9);
-  display: none;
+  z-index: 0;
 }
 
 .active-slider-link {
